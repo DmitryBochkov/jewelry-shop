@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  align-items: flex-end;
+  background-color: $color-background-footer;
+  color: $color-background;
+  padding-bottom: 5em;
+  line-height: 1;
+  text-align: center;
+
+  @mixin bgImage '../img/bg/bg-footer.jpg', 800px, transparent, $color-background-footer, center bottom;
+
+  .nav {
+    margin-top: 0;
+  }
+  .copyright {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    font-size: 1rem;
+    line-height: 1.1;
+  }
+}

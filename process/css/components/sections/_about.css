@@ -1,0 +1,28 @@
+.about {
+  background-color: #fff;
+
+  @media $large {
+    background-image: url('../img/aside.jpg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 30% auto;
+    min-height: 100vh;
+  }
+
+  .section__headline {
+    color: $darkred;
+    &:before {
+      background-position: 0 0;
+    }
+  }
+
+  em {
+    color: color($orange shade(10%));
+  }
+}
+
+.about__content {
+  @media $large {
+    width: 70%;
+  }
+}

@@ -1,0 +1,49 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-background;
+  color: $color-main;
+  font-family: $main-font;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: $normal;
+}
+.container {
+  width: $container-default-width;
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: $yellow;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  font-weight: $font-weight-heavy;
+  color: $darkred;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+em {
+  font-weight: $font-weight-heavy;
+  font-size: 140%;
+  font-style: normal;
+  color: $yellow;
+  vertical-align: -5%;
+}

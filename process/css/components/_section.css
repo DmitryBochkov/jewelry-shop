@@ -1,0 +1,35 @@
+.section {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.6;
+
+  @media $small {
+    font-size: 2rem;
+  }
+}
+
+.section__headline {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: $font-weight-normal;
+  font-size: 4rem;
+  margin-top: 3rem;
+  line-height: 1.1;
+  @media $small {
+    padding-left: 45px;
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      background-image: url(../img/sprite.png);
+      background-image: url(../img/sprite.svg);
+      background-repeat: no-repeat;
+      width: 37px;
+      height: 37px;
+      top: 0;
+      left: 0;
+    }
+  }
+}

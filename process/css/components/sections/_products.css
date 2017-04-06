@@ -1,0 +1,69 @@
+$color-bg-products: color($offwhite shade(5%));
+$item-width: 100%;
+
+.products {
+  background-color: $color-bg-products;
+  .imageheader {
+    @mixin bgImage '../img/bg/bg-products.jpg', 60vh, transparent, $color-bg-products;
+  }
+  .section__headline,
+  em {
+    color: $blue;
+  }
+  .section__headline {
+    &:before {
+      background-position: -84px -84px;
+    }
+  }
+  .product-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .product-item {
+    position: relative;
+    color: $color-background;
+    overflow: hidden;
+    width: calc($item-width/2);
+    @media $small {
+      width: calc($item-width/3);
+    }
+    @media $medium {
+      width: calc($item-width/4);
+    }
+    @media $large {
+      width: calc($item-width/6);
+    }
+
+    transition: all .4s ease-in-out;
+    opacity: .8;
+
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      transform: scale(1.2);
+      z-index: 1;
+
+      .product-name {
+        display: block;
+        animation: slideInUp 1s;
+      }
+    }
+  } /*.product-item*/
+
+  .product-name {
+    background-color: $red;
+    color: $yellow;
+    font-weight: $font-weight-heavy;
+    font-size: 80%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: none;
+  } /*.product-name*/
+
+} /*.products*/

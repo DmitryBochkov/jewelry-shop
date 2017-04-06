@@ -1,0 +1,16 @@
+$color-bg-guarantee: color($darkred shade(25%));
+
+.guarantee {
+  color: $color-background;
+  font-size: 2rem;
+  background-color: $color-bg-guarantee;
+  .imageheader {
+    @mixin bgImage '../img/bg/bg-guarantee.jpg', 60vh, transparent, $color-bg-guarantee, center center;
+  }
+
+  .section__headline {
+    &:before {
+      background-position: -42px -42px;
+    }
+  }
+}

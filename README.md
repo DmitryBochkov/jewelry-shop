@@ -2,4 +2,5 @@
 Simple landing page for a jewelry shop:
 
 - fully respopnsive;
-- built on PostCSS.
+- built on PostCSS;
+- Flexbox;
